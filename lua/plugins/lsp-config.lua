@@ -20,10 +20,19 @@ return {
 			local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
 			local lspconfig = require("lspconfig")
-			lspconfig.tsserver.setup({
+			lspconfig.clangd.setup({
 				capabilities = capabilities,
 			})
-			lspconfig.solargraph.setup({
+			lspconfig.jdtls.setup({
+				capabilities = capabilities,
+			})
+			lspconfig.pyright.setup({
+				capabilities = capabilities,
+			})
+			lspconfig.rust_analyzer.setup({
+				capabilities = capabilities,
+			})
+			lspconfig.tsserver.setup({
 				capabilities = capabilities,
 			})
 			lspconfig.html.setup({
@@ -32,22 +41,7 @@ return {
 			lspconfig.lua_ls.setup({
 				capabilities = capabilities,
 			})
-			lspconfig.clangd.setup({
-				capabilities = capabilities,
-			})
-			lspconfig.pyright.setup({
-				capabilities = capabilities,
-			})
-			lspconfig.jdtls.setup({
-				capabilities = capabilities,
-			})
 			lspconfig.golangci_lint_ls.setup({
-				capabilities = capabilities,
-			})
-			lspconfig.rust_analyzer.setup({
-				capabilities = capabilities,
-			})
-			lspconfig.solidity_ls.setup({
 				capabilities = capabilities,
 			})
 
