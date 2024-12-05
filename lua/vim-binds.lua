@@ -1,5 +1,6 @@
 -- vim commands
 vim.cmd("set number")
+vim.cmd("set relativenumber")
 vim.cmd("set nowrap")
 vim.cmd("set ts=4 sw=4")
 vim.cmd("set autoindent")
