@@ -14,7 +14,7 @@ vim.cmd("autocmd filetype java nnoremap <C-c> :!javac %<Enter>")
 vim.cmd("autocmd filetype java nnoremap <C-x> :term java Main")
 vim.cmd("autocmd filetype rust nnoremap <C-c> :!rustc %<Enter>")
 vim.cmd("nnoremap <C-x> :term %:p:r")
-vim.cmd("nnoremap <F3> :!python3 %<Enter>")
+vim.cmd("nnoremap <F3> :term python3 %<Enter>")
 vim.cmd('nnoremap <C-p> "+p')
 vim.cmd('vnoremap <C-y> "+y')
 vim.g.mapleader = " "
