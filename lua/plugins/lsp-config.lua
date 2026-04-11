@@ -31,6 +31,7 @@ return {
 				"lua_ls",
 				"golangci_lint_ls",
 				"bashls",
+				"asm_lsp",
 			}
 
 			for _, server in ipairs(servers) do
