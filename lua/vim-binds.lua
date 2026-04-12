@@ -19,4 +19,9 @@ vim.cmd("autocmd filetype sh nnoremap <F3> :term %<Enter>")
 vim.cmd("autocmd filetype sh nnoremap <F2> :! chmod +x %<Enter>")
 vim.cmd('nnoremap <C-p> "+p')
 vim.cmd('vnoremap <C-y> "+y')
+-- Move between panes/splits directly from the OpenCode terminal
+vim.keymap.set({'t', 'n'}, '<A-h>', [[<C-\><C-n><C-w>h]], { desc = "Move left from terminal" })
+vim.keymap.set({'t', 'n'}, '<A-j>', [[<C-\><C-n><C-w>j]], { desc = "Move down from terminal" })
+vim.keymap.set({'t', 'n'}, '<A-k>', [[<C-\><C-n><C-w>k]], { desc = "Move up from terminal" })
+vim.keymap.set({'t', 'n'}, '<A-l>', [[<C-\><C-n><C-w>l]], { desc = "Move right from terminal" })
 vim.g.mapleader = " "
